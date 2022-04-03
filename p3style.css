@@ -1,0 +1,142 @@
+/*
+	Web Programming Section 1
+	Project 3
+
+	This is the css page for the fifteen puzzle game.
+*/
+/*design choices*/
+body {
+  background-color: #4287f5;
+  text-align: center;
+  font-family: "arial";
+}
+
+/*center alignment*/
+.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*header and footer*/
+.pages {
+  border-radius: 10px;
+  background-color: #78deae;
+  padding: 1px;
+}
+.square {
+  height: 96px;
+  width: 96px;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  text-align: center;
+  font-size: 32px;
+  position: relative;
+  color: gray;
+}
+
+/*table format*/
+table {
+  border-spacing: 0px;
+}
+
+/*bg image format*/
+img {
+  width: 50px;
+  height: 50px;
+}
+
+/*border color*/
+.moveablepiece:hover {
+  color: #006600;
+  text-decoration: underline;
+  border-color: red;
+  cursor: pointer;
+}
+
+/*validators*/
+.validators {
+  position: fixed;
+  right: 10px;
+  bottom: 0px;
+}
+h1 {
+  font-size: 48px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+
+  text-align: center;
+  line-height: 59px;
+
+  padding: 0 64px;
+  margin: 0;
+}
+
+.stopwatch {
+  display: grid;
+  justify-items: center;
+  grid-row-gap: 23px;
+  width: 50%;
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-right: 0px;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 80px;
+  width: 80px;
+
+  border: 2px solid;
+  border-radius: 50%;
+}
+
+.time {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.gold {
+  font-weight: 900;
+
+  color: #f2c94c;
+  text-shadow: 0 0 0px #fff, 0 0 50px #f2c94c;
+}
+
+.controls {
+  display: block;
+  justify-content: space-between;
+  height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  padding: 0;
+  border: 1px;
+  margin: 0;
+  outline: none;
+  border: 2px solid;
+}
+
+#playButton {
+  display: block;
+}
+
+#pauseButton {
+  display: none;
+}
+img {
+  border: 1px solid #ddd;
+  border-radius: 1px;
+}
